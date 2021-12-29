@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-green-dark: #78b04b;
+    --color-green-clean: #82b85a;
+    --color-blue-clean: #6192d3;
+    --color-gray-clean: #e4dfdf;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+header{
+    display: flex;
+    height: 510px;
+}
+/*Container que emgloba o menu e o logo*/
+.header-container{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    background-color: var(--color-white);
+    height: 70px;
+    box-shadow: #000 1px 2px 2px;
+}
+
+.header-container a{
+    text-decoration: none;
+}
+/*fim*/
+/*Configuração do logo*/
+.logo-conf{
+    font-weight: bold;
+    color: var(--color-green-dark);
+    font-size: 32px;
+    text-shadow: #000 1px 1px 0px;
+    padding: 15px 0 0 30px;
+}
+.logo-palavra{
+    color: var(--color-blue-clean);
+}
+.logo-com{
+    color: var(--color-green-dark);
+    font-size: 15px;
+}
+/*fim*/
+/*Configuração do nav*/
+.nav-menu{
+    position: absolute;
+    right: 20px;
+    margin-right: 10px;
+    color: var(--color-blue-clean);
+    font-weight: bold;
+}
+#active-link a{
+    background-color: var(--color-green-clean);
+    color: #fff;
+}
+.nav-menu-conf{
+    display: flex;
+}
+.nav-menu-list{
+    display: block;
+    margin-right: 2px ;
+    font-size: 25px;
+}
+.nav-menu-list:hover{
+    background-color: var(--color-green-clean);
+}
+.nav-menu-list a{
+    color: var(--color-blue-clean);
+    display: block;
+    padding: 22px 22px 23px 22px;
+}
+.nav-menu-list a:hover{
+    background-color: var(--color-green-clean);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/*fim*/
+/*configuração da mensagem do dia*/
+.msg-dia-container{
+    margin-top: 72px;
+    height: 420px;
+    width: 100%;
+    background-image: url('https://raw.githubusercontent.com/deybisonbr/personalProjects/main/benditaPalavra/site/img/bg-msg2.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.box-msg-dia{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    background-color: #00000042;
+    border-radius: 10px;
+    height: 250px;
+    width: 50%;
+}
+.msg-dia p{
+    color: var(--color-white);
+    line-height: 35px;
+    margin: 5% 9% 9% 9%;
+    font-size: 24px;
+}
+.msg-dia p::before{
+    content: '❝';
+    padding-right: 3px;
+    font-size: 35px;
+}
+.msg-dia p::after{
+    content: '❞';
+    padding-left: 3px;
+    font-size: 35px;
+}
+.versiculo{
+    position: absolute;
+    color: var(--color-white);
+    font-size: 20px;
+    right: 10%;
+    top: 75%;
+}
+/*Fim*/
+/*Main tudo que for estruturado dentro da main*/
+.container{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+/*Biblia online*/
+.biblia-online{
+    width: 40%;
+    margin-right: 10px;
+}
+.biblia-online h2{
+    background-image: linear-gradient(to top, var(--color-green-clean), var(--color-green-dark));
+    box-sizing: border-box;
+    height: 45px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 7px;
+}
+.container-biblia-online{
+    display: flex;
+}
+/*/menu box nav biblia online*/
+.menu-box{
+    width: 35%;
+    height: 100%;
+}
+.list-menu-config{
+    padding: 15%;
+}
+.list-menu{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.list-menu a{
+    color: var(--color-black);
+}
+.list-menu a:hover{
+    color: var(--color-green-clean);
+}
+/*lista tema*/
+.vers-tema{
+    width: 65%;
+    height: 150px;
+}
+.vers-tema h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-blue-clean);
+    padding: 10px;
+}
+.ver-tema-config{
+    color: var(--color-black);
+    columns: 2;
+    padding-left: 40px;
+    padding-right: 5%;
+}
+.ver-tema-list{
+    padding-bottom: 4px;
+}
+.ver-tema-list a{
+    font-weight: bold;
+    font-size: 19px;
+    color: var(--color-black);
+}
+.ver-tema-list a:hover{
+    color: var(--color-green-clean);
+}
+/*fim*/
+/*Line box*/
+.line-box{
+    background-image: linear-gradient(to left, #fff, #cba807 , #fff);
+    width: 80%;
+    height: 2px;
+    margin: 30px auto 0 auto;
+}
+/*fim*/
+/*Velho testamento - novo*/
+.testamento-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.testamento{
+    width: 50%;
+}
+.testamento-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-blue-clean);
+    text-align: center;
+    padding-top: 20px;
+}
+.testamento-dual-box{
+    display: flex;
+}
+.testamento-ul{
+    padding:20px 0 0 50px;
+
+}
+.testamento-list{
+    font-weight: bold;
+    font-size: 19px;
+    padding-bottom: 4px;
+}
+.testamento-list a{
+    color: var(--color-black);
+}
+.testamento-list a:hover{
+    color: var(--color-green-clean);
+}
+
+
+
+.navegacao-interativa{
+    width: 60%;
+
+}
+
+.box-pesquisa{
+    display: flex;
+    background-color: var(--color-gray-clean);
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-radius: 2px;
+}
+#pesquisa{
+    float: left;
+    width: 86%;
+    height: 40px;
+    font-size: 18px;
+    margin: 3px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+#psq-btn{
+    width: 110px;
+    margin-top: 1px;
+    height: 45px;
+    background-image: linear-gradient(to right, var(--color-green-clean), var(--color-green-dark));
+    border: none;
+    float: left;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*interatividade*/
+.nav-interativa-img{
+    margin: 20px 0 0 120px ;
+}
+.interative-full-left{
+    display: flex;
+    width: 70%;
+    margin: 0 auto 50px 50px;
+    line-break: 20px;
+
+}
+.interative-img{
+    width: 250px;
+}
+
+.title-interative-left{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-blue-clean);
+    padding: 5px 0px 5px 10px;
+}
+.p-interaive-left{
+    padding: 0 0 5px 10px;
+    font-size: 18px;
+    clear: inherit;
+}
+
+.interative-full-right{
+    display: flex;
+    width: 70%;
+    margin: 0 auto 0 auto;
+
+}
+.title-interative-right{
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-blue-clean);
+    padding: 5px 10px 5px 0px;
+}
+.p-interaive-right{
+    text-align: right;
+}
+.p-interaive-right{
+    padding: 0 10px 5px 0px;
+    font-size: 18px;
+}
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-green-clean);
+    margin-top: 60px;
+}
+.creditos{
+    height: 94%;
+    display: flex;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    
+}
+.creditos-box{
+    margin: 50px 10px 0 0;
+    width: 33.3%;
+}
+.creditos-title{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: var(--color-white);
+}
+.menu-footer li{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 13px 0 0px 10px;
+}
+.menu-footer li a{
+    color: var(--color-white);
+}
+.menu-footer li a:hover{
+    color: var(--color-blue-clean);
+}
+#redes{
+    text-align: center;
+}
+.redes-box{
+    width: 142px;
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+.redes-img{
+    margin: 12px 12px 0 0;
+}
+.redes-box a:hover{
+    opacity: 50%;
+    transition: 1s;
+}
+.copyright{
+    color: var(--color-white);
+    text-align: center;
+    font-weight: bold;
+}
