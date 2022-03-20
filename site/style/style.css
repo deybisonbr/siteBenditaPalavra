@@ -90,7 +90,7 @@ header{
     margin-top: 72px;
     height: 420px;
     width: 100%;
-    background-image: url('https://raw.githubusercontent.com/deybisonbr/personalProjects/main/benditaPalavra/site/img/bg-msg2.jpg');
+    background-image: url('./img/bg-msg2.jpg');
     background-repeat: no-repeat;
 	background-size: cover;
 }
