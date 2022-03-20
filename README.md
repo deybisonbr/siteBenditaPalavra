@@ -1,3 +1,3 @@
 # siteBenditaPalavra
  Um site para estudo e leitura da biblia.
-<buttom>teste</buttom>
+[Acesse o site](https://deybisonbr.github.io/siteBenditaPalavra/site)
